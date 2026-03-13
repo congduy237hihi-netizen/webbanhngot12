@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tiệm bánh ngọt</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color: #fff0f5;
+    text-align: center;
+}
+
+h1{
+    color: #ff4081;
+}
+
+.banh{
+    display: inline-block;
+    width: 220px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    background: white;
+}
+
+.banh img{
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.banh img:hover{
+    transform: scale(1.1);
+}
+
+button{
+    background: #ff80ab;
+    border: none;
+    padding: 8px;
+    margin-top: 10px;
+}
+</style>
+<style>
+.hoadao{
+  position: fixed;
+  top: -50px;
+  font-size: 24px;
+  animation: roi 8s linear infinite;
+}
+
+@keyframes roi{
+  0%{
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🍰 Tiệm Bánh Ngọt Nhà Duy</h1>
+<p>Bánh ngon mỗi ngày</p>
+
+<div class="banh">
+<img src="img/macaron.jpg" width="200">
+<h3>Bánh Macaron</h3>
+<p>Giá: 10.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<div class="banh">
+<img src="img/kemtrung.jpg" width="200">
+<h3>Bánh Kem Trứng</h3>
+<p>Giá: 20.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<div class="banh">
+<img src="img/tiramisu.jpg" width="200">
+<h3>Bánh Tiramisu</h3>
+<p>Giá: 20.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<div class="banh">
+<img src="img/banhchuoihatphisocola.jpg" width="200">
+<h3>Bánh Bánh chuối Hạt Phi Socola</h3>
+<p>Giá: 12.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<div class="banh">
+<img src="img/banhkemtrabatuoc.jpg" width="200">
+<h3>Bánh Bánh Kem Trà Bá Tước</h3>
+<p>Giá: 100.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<div class="banh">
+<img src="img/bananacup.jpg" width="200">
+<h3>Bánh Bananacup</h3>
+<p>Giá: 12.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<div class="banh">
+<img src="img/chocolatechip.jpg" width="200">
+<h3>Bánh Chocolachip</h3>
+<p>Giá: 12.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<div class="banh">
+<img src="img/pankake.jpg" width="200">
+<h3>Bánh Pancake yến mạnh</h3>
+<p>Giá: 12.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<div class="banh">
+<img src="img/crepe.jpg" width="200">
+<h3>Bánh Crepe hộp quà</h3>
+<p>Giá: 12.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<div class="banh">
+<img src="img/banhtao.jpg" width="200">
+<h3>Bánh Bánh Táo Mini</h3>
+<p>Giá: 15.000đ</p>
+<a href="muahang.html">
+<button>Mua</button>
+</a>
+</div>
+
+<hr>
+
+<h2>📞 Liên hệ</h2>
+
+<p>Facebook: Tiệm Bánh Nhà Duy</p>
+<p>Zalo: 0365 234 516</p>
+<p>Địa chỉ: Đăk Lăk</p>
+
+<script>
+function taoHoaDao(){
+  const hoa = document.createElement("div");
+  hoa.className = "hoadao";
+  hoa.innerHTML = "🌸";
+
+  hoa.style.left = Math.random() * window.innerWidth + "px";
+  hoa.style.animationDuration = (5 + Math.random()*5) + "s";
+
+  document.body.appendChild(hoa);
+
+  setTimeout(()=>{
+    hoa.remove();
+  },10000);
+}
+
+setInterval(taoHoaDao,500);
+</script>
+
+</body>
+</html>
